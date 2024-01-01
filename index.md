@@ -1,123 +1,25 @@
----
-layout: default
----
 
-Text can be **bold**, _italic_, or ~~strikethrough~~.
+# A deep dive into Sales insights of a company
 
-[Link to another page](./another-page.html).
-
-There should be whitespace between paragraphs.
-
-There should be whitespace between paragraphs. We recommend including a README, or a file with information about your project.
-
-# Header 1
-
-This is a normal paragraph following a header. GitHub is a code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.
-
-## Header 2
-
-> This is a blockquote following a header.
->
-> When something is important enough, you do it even if the odds are not in your favor.
-
-### Header 3
-
-```js
-// Javascript code with syntax highlighting.
-var fun = function lang(l) {
-  dateformat.i18n = require('./lang/' + l)
-  return true;
-}
-```
-
-```ruby
-# Ruby code with syntax highlighting
-GitHubPages::Dependencies.gems.each do |gem, version|
-  s.add_dependency(gem, "= #{version}")
-end
-```
-
-#### Header 4
-
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-*   This is an unordered list following a header.
-
-##### Header 5
-
-1.  This is an ordered list following a header.
-2.  This is an ordered list following a header.
-3.  This is an ordered list following a header.
-
-###### Header 6
-
-| head1        | head two          | three |
-|:-------------|:------------------|:------|
-| ok           | good swedish fish | nice  |
-| out of stock | good and plenty   | nice  |
-| ok           | good `oreos`      | hmm   |
-| ok           | good `zoute` drop | yumm  |
-
-### There's a horizontal rule below this.
-
-* * *
-
-### Here is an unordered list:
-
-*   Item foo
-*   Item bar
-*   Item baz
-*   Item zip
-
-### And an ordered list:
-
-1.  Item one
-1.  Item two
-1.  Item three
-1.  Item four
-
-### And a nested list:
-
-- level 1 item
-  - level 2 item
-  - level 2 item
-    - level 3 item
-    - level 3 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-  - level 2 item
-  - level 2 item
-- level 1 item
-
-### Small image
-
-![Octocat](https://github.githubassets.com/images/icons/emoji/octocat.png)
-
-### Large image
-
-![Branching](https://guides.github.com/activities/hello-world/branching.png)
+Here the dataset is a MySQL database called sales, containing customers, products, markets, date, transactions tables. This is a dataset of an imaginary company. The main purpose of this report is to take a deep dive into the company's business over the years and draw some insights with the help of data. Through this dashboard we find answers to questions like:
+- Which market is the biggest source of revenue?
+- Top 5 customers and products by revenue.
+- How is the revenue trend over the years? 
+- Which market has shown highest profit margin?(profit/revenue)
+- which region has conributed to highest percentage share in profit margins?(profit of region/ total profits)
+- Are there any loss incurring customers?
 
 
-### Definition lists can be used with HTML syntax.
+### final report
 
-<dl>
-<dt>Name</dt>
-<dd>Godzilla</dd>
-<dt>Born</dt>
-<dd>1952</dd>
-<dt>Birthplace</dt>
-<dd>Japan</dd>
-<dt>Color</dt>
-<dd>Green</dd>
-</dl>
+![Octocat](https://user-images.githubusercontent.com/87435569/189685126-a6d24d02-8f04-4eac-8095-d9658ad41e1d.png)
+![image](https://user-images.githubusercontent.com/87435569/189685281-4d3efee9-01c4-46b6-adde-f780a9896053.png)
+![image](https://user-images.githubusercontent.com/87435569/189685411-2f22e415-ed03-41c7-8c04-d7c4e6fd1adb.png)
 
-```
-Long, single-line code blocks should not wrap. They should horizontally scroll if they are too long. This line should be long enough to demonstrate this.
-```
-
-```
-The final element.
-```
+### Insights 
+- Delhi is the highest contributor to the total revenue (54%) and total sales quantity of the company.
+- The line chart shows the revenue trend is falling over the years. The sharp decline can be associated with covid 19 breakout.
+- In 2020, Bhuvaneswar has the highest profit margin, i.e; profits amount to 10.48% of the revenue.
+- In 2020, Mumbai has the highest profits with Delhi at close second.
+- Only 20.4% of the total sales is from E-commerce platform.
+- A list of customer names, which are incurring losses to the comapny are shown.
